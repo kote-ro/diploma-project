@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Apache Spark training stand</title>
+</head>
+<body>
+<div th:if="${errors != null}">
+  <h1>Error</h1>
+  <ul>
+    <th:block th:object="${errors}">
+      <li th:each="error :${errors}" th:text="${error}">Error description here...</li>
+    </th:block>
+  </ul>
+</div>
+<div th:if="${warnings != null}">
+    <h1>Warnings</h1>
+    <ul>
+        <th:block th:object="${warnings}">
+            <li th:each="warning :${warnings}" th:text="${warning}">Warning description here...</li>
+        </th:block>
+    </ul>
+</div>
+</body>
+</html>

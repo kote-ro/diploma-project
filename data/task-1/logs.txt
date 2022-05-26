@@ -1,0 +1,332 @@
+2022-05-15 11:08:47.506  INFO 11308 --- [           main] c.d.demo.DiplomaProjectApplication       : Starting DiplomaProjectApplication using Java 11.0.15 on kotero-pc with PID 11308 (D:\dev\diploma-project\target\classes started by Ruslan in D:\dev\diploma-project)
+2022-05-15 11:08:47.564  INFO 11308 --- [           main] c.d.demo.DiplomaProjectApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-05-15 11:08:49.805  INFO 11308 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s)  080 (http)
+2022-05-15 11:08:49.816  INFO 11308 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 11:08:49.817  INFO 11308 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-15 11:08:50.156  INFO 11308 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 11:08:50.156  INFO 11308 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2264 ms
+2022-05-15 11:08:50.780  INFO 11308 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s)  080 (http) with context path ''
+2022-05-15 11:08:50.792  INFO 11308 --- [           main] c.d.demo.DiplomaProjectApplication       : Started DiplomaProjectApplication in 4.217 seconds (JVM running for 7.072)
+2022-05-15 11:09:19.148  INFO 11308 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 11:09:19.149  INFO 11308 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 11:09:19.150  INFO 11308 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/C:/Users/Ruslan/.m2/repository/org/apache/spark/spark-unsafe_2.12/3.1.3/spark-unsafe_2.12-3.1.3.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-05-15 11:09:20.143  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkContext            : Running Spark version 3.1.3
+2022-05-15 11:09:20.595  WARN 11308 --- [nio-8080-exec-1] org.apache.hadoop.util.NativeCodeLoader  : Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-05-15 11:09:20.809  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.resource.ResourceUtils  : ==============================================================
+2022-05-15 11:09:20.810  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.resource.ResourceUtils  : No custom resources configured for spark.driver.
+2022-05-15 11:09:20.810  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.resource.ResourceUtils  : ==============================================================
+2022-05-15 11:09:20.810  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkContext            : Submitted application: wordCounts
+2022-05-15 11:09:20.867  INFO 11308 --- [nio-8080-exec-1] o.apache.spark.resource.ResourceProfile  : Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount  , script: , vendor: , memory -> name: memory, amount  024, script: , vendor: , offHeap -> name: offHeap, amount  , script: , vendor: ), task resources: Map(cpus -> name: cpus, amount  .0)
+2022-05-15 11:09:20.879  INFO 11308 --- [nio-8080-exec-1] o.apache.spark.resource.ResourceProfile  : Limiting resource is cpu
+2022-05-15 11:09:20.879  INFO 11308 --- [nio-8080-exec-1] o.a.s.resource.ResourceProfileManager    : Added ResourceProfile id  
+2022-05-15 11:09:20.959  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SecurityManager         : Changing view acls to: Ruslan
+2022-05-15 11:09:20.959  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SecurityManager         : Changing modify acls to: Ruslan
+2022-05-15 11:09:20.960  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SecurityManager         : Changing view acls groups to  022-05-15 11:09:20.960  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SecurityManager         : Changing modify acls groups to  022-05-15 11:09:20.960  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SecurityManager         : SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Ruslan); groups with view permissions: Set(); users  with modify permissions: Set(Ruslan); groups with modify permissions: Set()
+2022-05-15 11:09:21.641  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.util.Utils              : Successfully started service 'sparkDriver' on port 62436.
+2022-05-15 11:09:21.661  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkEnv                : Registering MapOutputTracker
+2022-05-15 11:09:21.688  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkEnv                : Registering BlockManagerMaster
+2022-05-15 11:09:21.704  INFO 11308 --- [nio-8080-exec-1] o.a.s.s.BlockManagerMasterEndpoint       : Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2022-05-15 11:09:21.705  INFO 11308 --- [nio-8080-exec-1] o.a.s.s.BlockManagerMasterEndpoint       : BlockManagerMasterEndpoint up
+2022-05-15 11:09:21.709  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkEnv                : Registering BlockManagerMasterHeartbeat
+2022-05-15 11:09:21.732  INFO 11308 --- [nio-8080-exec-1] o.apache.spark.storage.DiskBlockManager  : Created local directory at C:\Users\Ruslan\AppData\Local\Temp\blockmgr-c1445aff-27b9-4b14-9aa9-c4dd7e59cf92
+2022-05-15 11:09:21.787  INFO 11308 --- [nio-8080-exec-1] o.a.spark.storage.memory.MemoryStore     : MemoryStore started with capacity 1030.8 MiB
+2022-05-15 11:09:21.809  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkEnv                : Registering OutputCommitCoordinator
+2022-05-15 11:09:21.968  INFO 11308 --- [nio-8080-exec-1] org.sparkproject.jetty.util.log          : Logging initialized @38246ms to org.sparkproject.jetty.util.log.Slf4jLog
+2022-05-15 11:09:22.105  INFO 11308 --- [nio-8080-exec-1] org.sparkproject.jetty.server.Server     : jetty-9.4.40.v20210413; built  021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 11.0.15+8-LTS-149
+2022-05-15 11:09:22.143  INFO 11308 --- [nio-8080-exec-1] org.sparkproject.jetty.server.Server     : Started @38423ms
+2022-05-15 11:09:22.177  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.AbstractConnector       : Started ServerConnector@77917180{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2022-05-15 11:09:22.177  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.util.Utils              : Successfully started service 'SparkUI' on port 4040.
+2022-05-15 11:09:22.209  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@10736662{/jobs,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.211  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@4dd8e06d{/jobs/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.212  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@34530bb{/jobs/job,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.213  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@7d1ff855{/jobs/job/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.213  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@7d4f97f2{/stages,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.214  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@64bbd3e{/stages/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.214  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@366998c7{/stages/stage,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.216  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@52d60fb6{/stages/stage/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.216  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@162c54{/stages/pool,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.217  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@1f2b2645{/stages/pool/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.218  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@7ef558{/storage,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.219  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@2a405fd2{/storage/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.220  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@346c768a{/storage/rdd,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.221  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@a5bb7cc{/storage/rdd/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.222  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@62d812f0{/environment,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.223  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@797f7273{/environment/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.225  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@5118e46c{/executors,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.226  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@1752478d{/executors/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.227  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@5b6b9a60{/executors/threadDump,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.229  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@29d63f50{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.236  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@52b2993d{/static,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.237  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@2a41ee39{/,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.238  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@5768bad{/api,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.239  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@f985ad8{/jobs/job/kill,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.240  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@68e2a693{/stages/stage/kill,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.241  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.ui.SparkUI              : Bound SparkUI to 0.0.0.0, and started at http://kotero-pc:4040
+2022-05-15 11:09:22.349  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.executor.Executor       : Starting executor ID driver on host kotero-pc
+2022-05-15 11:09:22.411  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.util.Utils              : Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 62459.
+2022-05-15 11:09:22.411  INFO 11308 --- [nio-8080-exec-1] o.a.s.n.netty.NettyBlockTransferService  : Server created on kotero-pc:62459
+2022-05-15 11:09:22.413  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.storage.BlockManager    : Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2022-05-15 11:09:22.420  INFO 11308 --- [nio-8080-exec-1] o.a.spark.storage.BlockManagerMaster     : Registering BlockManager BlockManagerId(driver, kotero-pc, 62459, None)
+2022-05-15 11:09:22.424  INFO 11308 --- [ckManagerMaster] o.a.s.s.BlockManagerMasterEndpoint       : Registering block manager kotero-pc:62459 with 1030.8 MiB RAM, BlockManagerId(driver, kotero-pc, 62459, None)
+2022-05-15 11:09:22.427  INFO 11308 --- [nio-8080-exec-1] o.a.spark.storage.BlockManagerMaster     : Registered BlockManager BlockManagerId(driver, kotero-pc, 62459, None)
+2022-05-15 11:09:22.428  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.storage.BlockManager    : Initialized BlockManager: BlockManagerId(driver, kotero-pc, 62459, None)
+2022-05-15 11:09:22.452  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@4e3c99db{/metrics/json,null,AVAILABLE,@Spark}
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html  for more info.
+2022-05-15 11:09:23.549  INFO 11308 --- [nio-8080-exec-1] o.a.spark.storage.memory.MemoryStore     : Block broadcast_0 stored as values in memory (estimated size 175.9 KiB, free 1030.6 MiB)
+2022-05-15 11:09:23.682  INFO 11308 --- [nio-8080-exec-1] o.a.spark.storage.memory.MemoryStore     : Block broadcast_0_piece0 stored as bytes in memory (estimated size 27.1 KiB, free 1030.6 MiB)
+2022-05-15 11:09:23.686  INFO 11308 --- [ckManagerMaster] o.apache.spark.storage.BlockManagerInfo  : Added broadcast_0_piece0 in memory on kotero-pc:62459 (size  7.1 KiB, free  030.8 MiB)
+2022-05-15 11:09:23.690  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkContext            : Created broadcast 0 from textFile at TwitterService.java:22
+2022-05-15 11:09:23.971  INFO 11308 --- [nio-8080-exec-1] o.apache.hadoop.mapred.FileInputFormat   : Total input files to process   
+2022-05-15 11:09:24.049  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkContext            : Starting job: countByValue at TwitterService.java:26
+2022-05-15 11:09:24.082  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Registering RDD 5 (countByValue at TwitterService.java:26) as input to shuffle 0
+2022-05-15 11:09:24.089  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Got job 0 (countByValue at TwitterService.java:26) with 2 output partitions
+2022-05-15 11:09:24.089  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Final stage: ResultStage 1 (countByValue at TwitterService.java:26)
+2022-05-15 11:09:24.089  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Parents of final stage: List(ShuffleMapStage 0)
+2022-05-15 11:09:24.091  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Missing parents: List(ShuffleMapStage 0)
+2022-05-15 11:09:24.095  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Submitting ShuffleMapStage 0 (MapPartitionsRDD[5] at countByValue at TwitterService.java:26), which has no missing parents
+2022-05-15 11:09:24.219  INFO 11308 --- [uler-event-loop] o.a.spark.storage.memory.MemoryStore     : Block broadcast_1 stored as values in memory (estimated size 8.0 KiB, free 1030.6 MiB)
+2022-05-15 11:09:24.224  INFO 11308 --- [uler-event-loop] o.a.spark.storage.memory.MemoryStore     : Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.3 KiB, free 1030.6 MiB)
+2022-05-15 11:09:24.227  INFO 11308 --- [ckManagerMaster] o.apache.spark.storage.BlockManagerInfo  : Added broadcast_1_piece0 in memory on kotero-pc:62459 (size  .3 KiB, free  030.8 MiB)
+2022-05-15 11:09:24.227  INFO 11308 --- [uler-event-loop] org.apache.spark.SparkContext            : Created broadcast 1 from broadcast at DAGScheduler.scala:1433
+2022-05-15 11:09:24.243  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[5] at countByValue at TwitterService.java:26) (first 15 tasks are for partitions Vector(0, 1))
+2022-05-15 11:09:24.244  INFO 11308 --- [uler-event-loop] o.a.spark.scheduler.TaskSchedulerImpl    : Adding task set 0.0 with 2 tasks resource profile 0
+2022-05-15 11:09:24.305  INFO 11308 --- [er-event-loop-1] o.apache.spark.scheduler.TaskSetManager  : Starting task 0.0 in stage 0.0 (TID 0) (kotero-pc, executor driver, partition 0, PROCESS_LOCAL, 4507 bytes) taskResourceAssignments Map()
+2022-05-15 11:09:24.308  INFO 11308 --- [er-event-loop-1] o.apache.spark.scheduler.TaskSetManager  : Starting task 1.0 in stage 0.0 (TID 1) (kotero-pc, executor driver, partition 1, PROCESS_LOCAL, 4507 bytes) taskResourceAssignments Map()
+2022-05-15 11:09:24.327  INFO 11308 --- [age 0.0 (TID 1)] org.apache.spark.executor.Executor       : Running task 1.0 in stage 0.0 (TID 1)
+2022-05-15 11:09:24.327  INFO 11308 --- [age 0.0 (TID 0)] org.apache.spark.executor.Executor       : Running task 0.0 in stage 0.0 (TID 0)
+2022-05-15 11:09:24.648  INFO 11308 --- [age 0.0 (TID 0)] org.apache.spark.rdd.HadoopRDD           : Input split: file:/D:/dev/diploma-project/data/task-2/test.txt:0+1184
+2022-05-15 11:09:24.648  INFO 11308 --- [age 0.0 (TID 1)] org.apache.spark.rdd.HadoopRDD           : Input split: file:/D:/dev/diploma-project/data/task-2/test.txt:1184+1184
+2022-05-15 11:09:24.872  INFO 11308 --- [age 0.0 (TID 0)] org.apache.spark.executor.Executor       : Finished task 0.0 in stage 0.0 (TID 0). 1288 bytes result sent to driver
+2022-05-15 11:09:24.872  INFO 11308 --- [age 0.0 (TID 1)] org.apache.spark.executor.Executor       : Finished task 1.0 in stage 0.0 (TID 1). 1288 bytes result sent to driver
+2022-05-15 11:09:24.890  INFO 11308 --- [result-getter-0] o.apache.spark.scheduler.TaskSetManager  : Finished task 0.0 in stage 0.0 (TID 0) in 595 ms on kotero-pc (executor driver) (1/2)
+2022-05-15 11:09:24.899  INFO 11308 --- [result-getter-1] o.apache.spark.scheduler.TaskSetManager  : Finished task 1.0 in stage 0.0 (TID 1) in 591 ms on kotero-pc (executor driver) (2/2)
+2022-05-15 11:09:24.900  INFO 11308 --- [result-getter-1] o.a.spark.scheduler.TaskSchedulerImpl    : Removed TaskSet 0.0, whose tasks have all completed, from pool
+2022-05-15 11:09:24.913  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : ShuffleMapStage 0 (countByValue at TwitterService.java:26) finished in 0,763 s
+2022-05-15 11:09:24.913  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : looking for newly runnable stages
+2022-05-15 11:09:24.913  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : running: Set()
+2022-05-15 11:09:24.913  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : waiting: Set(ResultStage 1)
+2022-05-15 11:09:24.914  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : failed: Set()
+2022-05-15 11:09:24.916  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Submitting ResultStage 1 (ShuffledRDD[6] at countByValue at TwitterService.java:26), which has no missing parents
+2022-05-15 11:09:24.921  INFO 11308 --- [uler-event-loop] o.a.spark.storage.memory.MemoryStore     : Block broadcast_2 stored as values in memory (estimated size 4.0 KiB, free 1030.6 MiB)
+2022-05-15 11:09:24.924  INFO 11308 --- [uler-event-loop] o.a.spark.storage.memory.MemoryStore     : Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.3 KiB, free 1030.6 MiB)
+2022-05-15 11:09:24.925  INFO 11308 --- [ckManagerMaster] o.apache.spark.storage.BlockManagerInfo  : Added broadcast_2_piece0 in memory on kotero-pc:62459 (size  .3 KiB, free  030.8 MiB)
+2022-05-15 11:09:24.926  INFO 11308 --- [uler-event-loop] org.apache.spark.SparkContext            : Created broadcast 2 from broadcast at DAGScheduler.scala:1433
+2022-05-15 11:09:24.927  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Submitting 2 missing tasks from ResultStage 1 (ShuffledRDD[6] at countByValue at TwitterService.java:26) (first 15 tasks are for partitions Vector(0, 1))
+2022-05-15 11:09:24.927  INFO 11308 --- [uler-event-loop] o.a.spark.scheduler.TaskSchedulerImpl    : Adding task set 1.0 with 2 tasks resource profile 0
+2022-05-15 11:09:24.932  INFO 11308 --- [er-event-loop-2] o.apache.spark.scheduler.TaskSetManager  : Starting task 0.0 in stage 1.0 (TID 2) (kotero-pc, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+2022-05-15 11:09:24.933  INFO 11308 --- [er-event-loop-2] o.apache.spark.scheduler.TaskSetManager  : Starting task 1.0 in stage 1.0 (TID 3) (kotero-pc, executor driver, partition 1, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+2022-05-15 11:09:24.933  INFO 11308 --- [age 1.0 (TID 3)] org.apache.spark.executor.Executor       : Running task 1.0 in stage 1.0 (TID 3)
+2022-05-15 11:09:24.933  INFO 11308 --- [age 1.0 (TID 2)] org.apache.spark.executor.Executor       : Running task 0.0 in stage 1.0 (TID 2)
+2022-05-15 11:09:24.951  INFO 11308 --- [age 1.0 (TID 3)] o.a.s.s.ShuffleBlockFetcherIterator      : Getting 2 (527.0 B) non-empty blocks including 2 (527.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2022-05-15 11:09:24.951  INFO 11308 --- [age 1.0 (TID 2)] o.a.s.s.ShuffleBlockFetcherIterator      : Getting 2 (363.0 B) non-empty blocks including 2 (363.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2022-05-15 11:09:24.952  INFO 11308 --- [age 1.0 (TID 3)] o.a.s.s.ShuffleBlockFetcherIterator      : Started 0 remote fetches in 5 ms
+2022-05-15 11:09:24.952  INFO 11308 --- [age 1.0 (TID 2)] o.a.s.s.ShuffleBlockFetcherIterator      : Started 0 remote fetches in 5 ms
+2022-05-15 11:09:25.006  INFO 11308 --- [age 1.0 (TID 2)] org.apache.spark.executor.Executor       : Finished task 0.0 in stage 1.0 (TID 2). 1535 bytes result sent to driver
+2022-05-15 11:09:25.007  INFO 11308 --- [age 1.0 (TID 3)] org.apache.spark.executor.Executor       : Finished task 1.0 in stage 1.0 (TID 3). 1840 bytes result sent to driver
+2022-05-15 11:09:25.009  INFO 11308 --- [result-getter-2] o.apache.spark.scheduler.TaskSetManager  : Finished task 0.0 in stage 1.0 (TID 2) in 79 ms on kotero-pc (executor driver) (1/2)
+2022-05-15 11:09:25.009  INFO 11308 --- [result-getter-3] o.apache.spark.scheduler.TaskSetManager  : Finished task 1.0 in stage 1.0 (TID 3) in 77 ms on kotero-pc (executor driver) (2/2)
+2022-05-15 11:09:25.010  INFO 11308 --- [result-getter-3] o.a.spark.scheduler.TaskSchedulerImpl    : Removed TaskSet 1.0, whose tasks have all completed, from pool
+2022-05-15 11:09:25.011  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : ResultStage 1 (countByValue at TwitterService.java:26) finished in 0,090 s
+2022-05-15 11:09:25.015  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-05-15 11:09:25.016  INFO 11308 --- [uler-event-loop] o.a.spark.scheduler.TaskSchedulerImpl    : Killing all running tasks in stage 1: Stage finished
+2022-05-15 11:09:25.017  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.scheduler.DAGScheduler  : Job 0 finished: countByValue at TwitterService.java:26, took 0,967566 s
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService  :  . 1
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService  :  , 1
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.023  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.023  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.023  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.023  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.023  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService  :  ️ 1
+2022-05-15 11:09:26.442  WARN 11308 --- [     SparkUI-75] o.g.jersey.server.wadl.WadlFeature       : JAXBContext implementation could not be found. WADL feature is disabled.
+2022-05-15 11:09:26.721  INFO 11308 --- [ckManagerMaster] o.apache.spark.storage.BlockManagerInfo  : Removed broadcast_2_piece0 on kotero-pc:62459 in memory (size  .3 KiB, free  030.8 MiB)
+2022-05-15 11:09:37.411  WARN 11308 --- [ver-heartbeater] o.a.spark.executor.ProcfsMetricsGetter   : Exception when trying to compute pagesize, as a result reporting of ProcessTree metrics is stopped
+2022-05-15 11:08:47.506  INFO 11308 --- [           main] c.d.demo.DiplomaProjectApplication       : Starting DiplomaProjectApplication using Java 11.0.15 on kotero-pc with PID 11308 (D:\dev\diploma-project\target\classes started by Ruslan in D:\dev\diploma-project)
+2022-05-15 11:08:47.564  INFO 11308 --- [           main] c.d.demo.DiplomaProjectApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-05-15 11:08:49.805  INFO 11308 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s)  080 (http)
+2022-05-15 11:08:49.816  INFO 11308 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-15 11:08:49.817  INFO 11308 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-15 11:08:50.156  INFO 11308 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-15 11:08:50.156  INFO 11308 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2264 ms
+2022-05-15 11:08:50.780  INFO 11308 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s)  080 (http) with context path ''
+2022-05-15 11:08:50.792  INFO 11308 --- [           main] c.d.demo.DiplomaProjectApplication       : Started DiplomaProjectApplication in 4.217 seconds (JVM running for 7.072)
+2022-05-15 11:09:19.148  INFO 11308 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-15 11:09:19.149  INFO 11308 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-15 11:09:19.150  INFO 11308 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/C:/Users/Ruslan/.m2/repository/org/apache/spark/spark-unsafe_2.12/3.1.3/spark-unsafe_2.12-3.1.3.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-05-15 11:09:20.143  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkContext            : Running Spark version 3.1.3
+2022-05-15 11:09:20.595  WARN 11308 --- [nio-8080-exec-1] org.apache.hadoop.util.NativeCodeLoader  : Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-05-15 11:09:20.809  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.resource.ResourceUtils  : ==============================================================
+2022-05-15 11:09:20.810  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.resource.ResourceUtils  : No custom resources configured for spark.driver.
+2022-05-15 11:09:20.810  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.resource.ResourceUtils  : ==============================================================
+2022-05-15 11:09:20.810  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkContext            : Submitted application: wordCounts
+2022-05-15 11:09:20.867  INFO 11308 --- [nio-8080-exec-1] o.apache.spark.resource.ResourceProfile  : Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount  , script: , vendor: , memory -> name: memory, amount  024, script: , vendor: , offHeap -> name: offHeap, amount  , script: , vendor: ), task resources: Map(cpus -> name: cpus, amount  .0)
+2022-05-15 11:09:20.879  INFO 11308 --- [nio-8080-exec-1] o.apache.spark.resource.ResourceProfile  : Limiting resource is cpu
+2022-05-15 11:09:20.879  INFO 11308 --- [nio-8080-exec-1] o.a.s.resource.ResourceProfileManager    : Added ResourceProfile id  
+2022-05-15 11:09:20.959  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SecurityManager         : Changing view acls to: Ruslan
+2022-05-15 11:09:20.959  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SecurityManager         : Changing modify acls to: Ruslan
+2022-05-15 11:09:20.960  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SecurityManager         : Changing view acls groups to  022-05-15 11:09:20.960  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SecurityManager         : Changing modify acls groups to  022-05-15 11:09:20.960  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SecurityManager         : SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Ruslan); groups with view permissions: Set(); users  with modify permissions: Set(Ruslan); groups with modify permissions: Set()
+2022-05-15 11:09:21.641  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.util.Utils              : Successfully started service 'sparkDriver' on port 62436.
+2022-05-15 11:09:21.661  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkEnv                : Registering MapOutputTracker
+2022-05-15 11:09:21.688  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkEnv                : Registering BlockManagerMaster
+2022-05-15 11:09:21.704  INFO 11308 --- [nio-8080-exec-1] o.a.s.s.BlockManagerMasterEndpoint       : Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2022-05-15 11:09:21.705  INFO 11308 --- [nio-8080-exec-1] o.a.s.s.BlockManagerMasterEndpoint       : BlockManagerMasterEndpoint up
+2022-05-15 11:09:21.709  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkEnv                : Registering BlockManagerMasterHeartbeat
+2022-05-15 11:09:21.732  INFO 11308 --- [nio-8080-exec-1] o.apache.spark.storage.DiskBlockManager  : Created local directory at C:\Users\Ruslan\AppData\Local\Temp\blockmgr-c1445aff-27b9-4b14-9aa9-c4dd7e59cf92
+2022-05-15 11:09:21.787  INFO 11308 --- [nio-8080-exec-1] o.a.spark.storage.memory.MemoryStore     : MemoryStore started with capacity 1030.8 MiB
+2022-05-15 11:09:21.809  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkEnv                : Registering OutputCommitCoordinator
+2022-05-15 11:09:21.968  INFO 11308 --- [nio-8080-exec-1] org.sparkproject.jetty.util.log          : Logging initialized @38246ms to org.sparkproject.jetty.util.log.Slf4jLog
+2022-05-15 11:09:22.105  INFO 11308 --- [nio-8080-exec-1] org.sparkproject.jetty.server.Server     : jetty-9.4.40.v20210413; built  021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 11.0.15+8-LTS-149
+2022-05-15 11:09:22.143  INFO 11308 --- [nio-8080-exec-1] org.sparkproject.jetty.server.Server     : Started @38423ms
+2022-05-15 11:09:22.177  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.AbstractConnector       : Started ServerConnector@77917180{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2022-05-15 11:09:22.177  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.util.Utils              : Successfully started service 'SparkUI' on port 4040.
+2022-05-15 11:09:22.209  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@10736662{/jobs,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.211  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@4dd8e06d{/jobs/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.212  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@34530bb{/jobs/job,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.213  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@7d1ff855{/jobs/job/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.213  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@7d4f97f2{/stages,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.214  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@64bbd3e{/stages/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.214  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@366998c7{/stages/stage,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.216  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@52d60fb6{/stages/stage/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.216  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@162c54{/stages/pool,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.217  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@1f2b2645{/stages/pool/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.218  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@7ef558{/storage,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.219  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@2a405fd2{/storage/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.220  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@346c768a{/storage/rdd,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.221  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@a5bb7cc{/storage/rdd/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.222  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@62d812f0{/environment,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.223  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@797f7273{/environment/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.225  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@5118e46c{/executors,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.226  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@1752478d{/executors/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.227  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@5b6b9a60{/executors/threadDump,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.229  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@29d63f50{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.236  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@52b2993d{/static,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.237  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@2a41ee39{/,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.238  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@5768bad{/api,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.239  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@f985ad8{/jobs/job/kill,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.240  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@68e2a693{/stages/stage/kill,null,AVAILABLE,@Spark}
+2022-05-15 11:09:22.241  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.ui.SparkUI              : Bound SparkUI to 0.0.0.0, and started at http://kotero-pc:4040
+2022-05-15 11:09:22.349  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.executor.Executor       : Starting executor ID driver on host kotero-pc
+2022-05-15 11:09:22.411  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.util.Utils              : Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 62459.
+2022-05-15 11:09:22.411  INFO 11308 --- [nio-8080-exec-1] o.a.s.n.netty.NettyBlockTransferService  : Server created on kotero-pc:62459
+2022-05-15 11:09:22.413  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.storage.BlockManager    : Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2022-05-15 11:09:22.420  INFO 11308 --- [nio-8080-exec-1] o.a.spark.storage.BlockManagerMaster     : Registering BlockManager BlockManagerId(driver, kotero-pc, 62459, None)
+2022-05-15 11:09:22.424  INFO 11308 --- [ckManagerMaster] o.a.s.s.BlockManagerMasterEndpoint       : Registering block manager kotero-pc:62459 with 1030.8 MiB RAM, BlockManagerId(driver, kotero-pc, 62459, None)
+2022-05-15 11:09:22.427  INFO 11308 --- [nio-8080-exec-1] o.a.spark.storage.BlockManagerMaster     : Registered BlockManager BlockManagerId(driver, kotero-pc, 62459, None)
+2022-05-15 11:09:22.428  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.storage.BlockManager    : Initialized BlockManager: BlockManagerId(driver, kotero-pc, 62459, None)
+2022-05-15 11:09:22.452  INFO 11308 --- [nio-8080-exec-1] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@4e3c99db{/metrics/json,null,AVAILABLE,@Spark}
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html  for more info.
+2022-05-15 11:09:23.549  INFO 11308 --- [nio-8080-exec-1] o.a.spark.storage.memory.MemoryStore     : Block broadcast_0 stored as values in memory (estimated size 175.9 KiB, free 1030.6 MiB)
+2022-05-15 11:09:23.682  INFO 11308 --- [nio-8080-exec-1] o.a.spark.storage.memory.MemoryStore     : Block broadcast_0_piece0 stored as bytes in memory (estimated size 27.1 KiB, free 1030.6 MiB)
+2022-05-15 11:09:23.686  INFO 11308 --- [ckManagerMaster] o.apache.spark.storage.BlockManagerInfo  : Added broadcast_0_piece0 in memory on kotero-pc:62459 (size  7.1 KiB, free  030.8 MiB)
+2022-05-15 11:09:23.690  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkContext            : Created broadcast 0 from textFile at TwitterService.java:22
+2022-05-15 11:09:23.971  INFO 11308 --- [nio-8080-exec-1] o.apache.hadoop.mapred.FileInputFormat   : Total input files to process   
+2022-05-15 11:09:24.049  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.SparkContext            : Starting job: countByValue at TwitterService.java:26
+2022-05-15 11:09:24.082  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Registering RDD 5 (countByValue at TwitterService.java:26) as input to shuffle 0
+2022-05-15 11:09:24.089  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Got job 0 (countByValue at TwitterService.java:26) with 2 output partitions
+2022-05-15 11:09:24.089  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Final stage: ResultStage 1 (countByValue at TwitterService.java:26)
+2022-05-15 11:09:24.089  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Parents of final stage: List(ShuffleMapStage 0)
+2022-05-15 11:09:24.091  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Missing parents: List(ShuffleMapStage 0)
+2022-05-15 11:09:24.095  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Submitting ShuffleMapStage 0 (MapPartitionsRDD[5] at countByValue at TwitterService.java:26), which has no missing parents
+2022-05-15 11:09:24.219  INFO 11308 --- [uler-event-loop] o.a.spark.storage.memory.MemoryStore     : Block broadcast_1 stored as values in memory (estimated size 8.0 KiB, free 1030.6 MiB)
+2022-05-15 11:09:24.224  INFO 11308 --- [uler-event-loop] o.a.spark.storage.memory.MemoryStore     : Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.3 KiB, free 1030.6 MiB)
+2022-05-15 11:09:24.227  INFO 11308 --- [ckManagerMaster] o.apache.spark.storage.BlockManagerInfo  : Added broadcast_1_piece0 in memory on kotero-pc:62459 (size  .3 KiB, free  030.8 MiB)
+2022-05-15 11:09:24.227  INFO 11308 --- [uler-event-loop] org.apache.spark.SparkContext            : Created broadcast 1 from broadcast at DAGScheduler.scala:1433
+2022-05-15 11:09:24.243  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[5] at countByValue at TwitterService.java:26) (first 15 tasks are for partitions Vector(0, 1))
+2022-05-15 11:09:24.244  INFO 11308 --- [uler-event-loop] o.a.spark.scheduler.TaskSchedulerImpl    : Adding task set 0.0 with 2 tasks resource profile 0
+2022-05-15 11:09:24.305  INFO 11308 --- [er-event-loop-1] o.apache.spark.scheduler.TaskSetManager  : Starting task 0.0 in stage 0.0 (TID 0) (kotero-pc, executor driver, partition 0, PROCESS_LOCAL, 4507 bytes) taskResourceAssignments Map()
+2022-05-15 11:09:24.308  INFO 11308 --- [er-event-loop-1] o.apache.spark.scheduler.TaskSetManager  : Starting task 1.0 in stage 0.0 (TID 1) (kotero-pc, executor driver, partition 1, PROCESS_LOCAL, 4507 bytes) taskResourceAssignments Map()
+2022-05-15 11:09:24.327  INFO 11308 --- [age 0.0 (TID 1)] org.apache.spark.executor.Executor       : Running task 1.0 in stage 0.0 (TID 1)
+2022-05-15 11:09:24.327  INFO 11308 --- [age 0.0 (TID 0)] org.apache.spark.executor.Executor       : Running task 0.0 in stage 0.0 (TID 0)
+2022-05-15 11:09:24.648  INFO 11308 --- [age 0.0 (TID 0)] org.apache.spark.rdd.HadoopRDD           : Input split: file:/D:/dev/diploma-project/data/task-2/test.txt:0+1184
+2022-05-15 11:09:24.648  INFO 11308 --- [age 0.0 (TID 1)] org.apache.spark.rdd.HadoopRDD           : Input split: file:/D:/dev/diploma-project/data/task-2/test.txt:1184+1184
+2022-05-15 11:09:24.872  INFO 11308 --- [age 0.0 (TID 0)] org.apache.spark.executor.Executor       : Finished task 0.0 in stage 0.0 (TID 0). 1288 bytes result sent to driver
+2022-05-15 11:09:24.872  INFO 11308 --- [age 0.0 (TID 1)] org.apache.spark.executor.Executor       : Finished task 1.0 in stage 0.0 (TID 1). 1288 bytes result sent to driver
+2022-05-15 11:09:24.890  INFO 11308 --- [result-getter-0] o.apache.spark.scheduler.TaskSetManager  : Finished task 0.0 in stage 0.0 (TID 0) in 595 ms on kotero-pc (executor driver) (1/2)
+2022-05-15 11:09:24.899  INFO 11308 --- [result-getter-1] o.apache.spark.scheduler.TaskSetManager  : Finished task 1.0 in stage 0.0 (TID 1) in 591 ms on kotero-pc (executor driver) (2/2)
+2022-05-15 11:09:24.900  INFO 11308 --- [result-getter-1] o.a.spark.scheduler.TaskSchedulerImpl    : Removed TaskSet 0.0, whose tasks have all completed, from pool
+2022-05-15 11:09:24.913  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : ShuffleMapStage 0 (countByValue at TwitterService.java:26) finished in 0,763 s
+2022-05-15 11:09:24.913  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : looking for newly runnable stages
+2022-05-15 11:09:24.913  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : running: Set()
+2022-05-15 11:09:24.913  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : waiting: Set(ResultStage 1)
+2022-05-15 11:09:24.914  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : failed: Set()
+2022-05-15 11:09:24.916  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Submitting ResultStage 1 (ShuffledRDD[6] at countByValue at TwitterService.java:26), which has no missing parents
+2022-05-15 11:09:24.921  INFO 11308 --- [uler-event-loop] o.a.spark.storage.memory.MemoryStore     : Block broadcast_2 stored as values in memory (estimated size 4.0 KiB, free 1030.6 MiB)
+2022-05-15 11:09:24.924  INFO 11308 --- [uler-event-loop] o.a.spark.storage.memory.MemoryStore     : Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.3 KiB, free 1030.6 MiB)
+2022-05-15 11:09:24.925  INFO 11308 --- [ckManagerMaster] o.apache.spark.storage.BlockManagerInfo  : Added broadcast_2_piece0 in memory on kotero-pc:62459 (size  .3 KiB, free  030.8 MiB)
+2022-05-15 11:09:24.926  INFO 11308 --- [uler-event-loop] org.apache.spark.SparkContext            : Created broadcast 2 from broadcast at DAGScheduler.scala:1433
+2022-05-15 11:09:24.927  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Submitting 2 missing tasks from ResultStage 1 (ShuffledRDD[6] at countByValue at TwitterService.java:26) (first 15 tasks are for partitions Vector(0, 1))
+2022-05-15 11:09:24.927  INFO 11308 --- [uler-event-loop] o.a.spark.scheduler.TaskSchedulerImpl    : Adding task set 1.0 with 2 tasks resource profile 0
+2022-05-15 11:09:24.932  INFO 11308 --- [er-event-loop-2] o.apache.spark.scheduler.TaskSetManager  : Starting task 0.0 in stage 1.0 (TID 2) (kotero-pc, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+2022-05-15 11:09:24.933  INFO 11308 --- [er-event-loop-2] o.apache.spark.scheduler.TaskSetManager  : Starting task 1.0 in stage 1.0 (TID 3) (kotero-pc, executor driver, partition 1, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+2022-05-15 11:09:24.933  INFO 11308 --- [age 1.0 (TID 3)] org.apache.spark.executor.Executor       : Running task 1.0 in stage 1.0 (TID 3)
+2022-05-15 11:09:24.933  INFO 11308 --- [age 1.0 (TID 2)] org.apache.spark.executor.Executor       : Running task 0.0 in stage 1.0 (TID 2)
+2022-05-15 11:09:24.951  INFO 11308 --- [age 1.0 (TID 3)] o.a.s.s.ShuffleBlockFetcherIterator      : Getting 2 (527.0 B) non-empty blocks including 2 (527.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2022-05-15 11:09:24.951  INFO 11308 --- [age 1.0 (TID 2)] o.a.s.s.ShuffleBlockFetcherIterator      : Getting 2 (363.0 B) non-empty blocks including 2 (363.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+2022-05-15 11:09:24.952  INFO 11308 --- [age 1.0 (TID 3)] o.a.s.s.ShuffleBlockFetcherIterator      : Started 0 remote fetches in 5 ms
+2022-05-15 11:09:24.952  INFO 11308 --- [age 1.0 (TID 2)] o.a.s.s.ShuffleBlockFetcherIterator      : Started 0 remote fetches in 5 ms
+2022-05-15 11:09:25.006  INFO 11308 --- [age 1.0 (TID 2)] org.apache.spark.executor.Executor       : Finished task 0.0 in stage 1.0 (TID 2). 1535 bytes result sent to driver
+2022-05-15 11:09:25.007  INFO 11308 --- [age 1.0 (TID 3)] org.apache.spark.executor.Executor       : Finished task 1.0 in stage 1.0 (TID 3). 1840 bytes result sent to driver
+2022-05-15 11:09:25.009  INFO 11308 --- [result-getter-2] o.apache.spark.scheduler.TaskSetManager  : Finished task 0.0 in stage 1.0 (TID 2) in 79 ms on kotero-pc (executor driver) (1/2)
+2022-05-15 11:09:25.009  INFO 11308 --- [result-getter-3] o.apache.spark.scheduler.TaskSetManager  : Finished task 1.0 in stage 1.0 (TID 3) in 77 ms on kotero-pc (executor driver) (2/2)
+2022-05-15 11:09:25.010  INFO 11308 --- [result-getter-3] o.a.spark.scheduler.TaskSchedulerImpl    : Removed TaskSet 1.0, whose tasks have all completed, from pool
+2022-05-15 11:09:25.011  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : ResultStage 1 (countByValue at TwitterService.java:26) finished in 0,090 s
+2022-05-15 11:09:25.015  INFO 11308 --- [uler-event-loop] org.apache.spark.scheduler.DAGScheduler  : Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-05-15 11:09:25.016  INFO 11308 --- [uler-event-loop] o.a.spark.scheduler.TaskSchedulerImpl    : Killing all running tasks in stage 1: Stage finished
+2022-05-15 11:09:25.017  INFO 11308 --- [nio-8080-exec-1] org.apache.spark.scheduler.DAGScheduler  : Job 0 finished: countByValue at TwitterService.java:26, took 0,967566 s
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService
+2022-05-15 11:09:25.022  ERROR 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  ERROR 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:27.022  ERROR 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:26.022  ERROR 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService
+2022-05-15 11:09:25.022  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.023  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.023  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.023  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.023  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService    
+2022-05-15 11:09:25.023  INFO 11308 --- [nio-8080-exec-1] com.diploma.demo.service.TwitterService
+2022-05-15 11:09:26.442  WARN 11308 --- [     SparkUI-75] o.g.jersey.server.wadl.WadlFeature       : JAXBContext implementation could not be found. WADL feature is disabled.
+2022-05-15 11:09:26.721  INFO 11308 --- [ckManagerMaster] o.apache.spark.storage.BlockManagerInfo  : Removed broadcast_2_piece0 on kotero-pc:62459 in memory (size  .3 KiB, free  030.8 MiB)
+2022-05-15 11:09:37.411  WARN 11308 --- [ver-heartbeater] o.a.spark.executor.ProcfsMetricsGetter   : Exception when trying to compute pagesize, as a result reporting of ProcessTree metrics is stopped
