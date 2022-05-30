@@ -8,19 +8,16 @@ import scala.Tuple2;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 @Service
 public class TwitterService {
     private final SparkSession spark;
-    private final Logger logger = Logger.getLogger(this.getClass().getName());
 
     public TwitterService(SparkSession spark) {
         this.spark = spark;
     }
 
-    // какие хэштеги можно найти в твиттах с хэштегом #WARINUKRAINE
     public List<String> findTrendingHashtags(){
         JavaSparkContext sc = JavaSparkContext.fromSparkContext(spark.sparkContext());
         String path = "data/task-2/tweets.txt";

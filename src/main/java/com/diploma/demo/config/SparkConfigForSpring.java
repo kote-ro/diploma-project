@@ -10,20 +10,29 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 public class SparkConfigForSpring {
 
-    @Value("${app.name.spark-spring-boot}")
+    @Value("${spark.app.name}")
     private String appName;
 
-    @Value("${master.uri.local}")
-    private String masterUri;
+    @Value("${spark.uri.local}")
+    private String masterUriLocal;
+
+    @Value("${spark.uri.cluster}")
+    private String masterUriCluster;
+
+    @Value("${spark.mongodb.input.uri}")
+    private String inputIri;
+
+    @Value("${spark.mongodb.output.uri}")
+    private String outputIri;
 
     @Bean
     @Profile("LOCAL")
     public SparkSession sparkSessionLocal(){
         return SparkSession.builder()
-                .master(masterUri)
+                .master(masterUriLocal)
                 .appName(appName)
-                .config("spark.mongodb.input.uri", "mongodb://localhost:27017/task-3.inputData")
-                .config("spark.mongodb.output.uri", "mongodb://localhost:27017/task-3.inputData")
+                .config("spark.mongodb.input.uri", inputIri)
+                .config("spark.mongodb.output.uri", outputIri)
                 .getOrCreate();
     }
 
@@ -31,10 +40,10 @@ public class SparkConfigForSpring {
     @Profile("CLUSTER")
     public SparkSession sparkSessionCluster(){
         return SparkSession.builder()
-                .master(masterUri)
+                .master(masterUriCluster)
                 .appName(appName)
-                .config("spark.mongodb.input.uri", "mongodb://localhost:27017/task-3.inputData")
-                .config("spark.mongodb.output.uri", "mongodb://localhost:27017/task-3.inputData")
+                .config("spark.mongodb.input.uri", inputIri)
+                .config("spark.mongodb.output.uri", outputIri)
                 .getOrCreate();
     }
 

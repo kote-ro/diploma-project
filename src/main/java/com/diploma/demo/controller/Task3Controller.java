@@ -1,11 +1,16 @@
 package com.diploma.demo.controller;
 
+import com.diploma.demo.model.Task3Result;
 import com.diploma.demo.service.PsychoService;
+import org.apache.spark.sql.Dataset;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+import java.util.List;
+
+@Controller
 @RequestMapping("/api")
 public class Task3Controller {
     private final PsychoService psychoService;
@@ -20,8 +25,10 @@ public class Task3Controller {
     }
 
     @GetMapping("/get-aggregated-tests")
-    public void getAggregatedTests(){
-        psychoService.processData();
+    public String getAggregatedTests(Model model){
+        List<Task3Result> predictions = psychoService.processData();
+        model.addAttribute("predictions", predictions);
+        return "task-3";
     }
 
 
