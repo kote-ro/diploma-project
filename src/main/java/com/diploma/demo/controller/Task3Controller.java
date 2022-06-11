@@ -19,11 +19,6 @@ public class Task3Controller {
         this.psychoService = psychoService;
     }
 
-    @GetMapping("/generate-tests")
-    public void generateTests(){
-        psychoService.generateData();
-    }
-
     @GetMapping("/get-aggregated-tests")
     public String getAggregatedTests(Model model){
         List<Task3Result> predictions = psychoService.processData();

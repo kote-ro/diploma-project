@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+  mongo_db:
+    image: "mongo:4.4.3"
+    restart: always
+    networks:
+      - net2
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: mongo
+  spark_stand:
+    build: .
+    restart: always
+    networks:
+      - net2
+      - net1
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongo_db
+    links:
+      - mongo_db:mongo
+
+networks:
+  net1:
+    internal: true
+  net2:
+    driver: bridge
