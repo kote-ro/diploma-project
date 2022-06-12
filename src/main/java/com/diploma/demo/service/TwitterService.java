@@ -20,7 +20,7 @@ public class TwitterService {
 
     public List<String> findTrendingHashtags(){
         JavaSparkContext sc = JavaSparkContext.fromSparkContext(spark.sparkContext());
-        String path = "data/task-2/tweets.txt";
+        String path = "tweets.txt";
 
         JavaRDD<String> file = sc.textFile(path);
         List<Tuple2<Integer, String>> words = file

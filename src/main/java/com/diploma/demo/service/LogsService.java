@@ -25,7 +25,7 @@ public class LogsService {
 
     public Task1Result findWarningsAndErrors(){
         JavaSparkContext sc = JavaSparkContext.fromSparkContext(spark.sparkContext());
-        String path = "data/task-1/logs.txt";
+        String path = "logs.txt";
 
         JavaRDD<String> file = sc.textFile(path);
         List<Tuple2<Integer, String>> words1 = file

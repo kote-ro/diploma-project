@@ -1,12 +1,15 @@
 version: "3.7"
+
 services:
-  mongo_db:
+  mongodb:
     image: "mongo:4.4.3"
     restart: always
-    networks:
-      - net2
+    expose:
+      - 27017
     ports:
       - 27017:27017
+    networks:
+      - connector
     environment:
       MONGO_INITDB_ROOT_USERNAME: mongo
       MONGO_INITDB_ROOT_PASSWORD: mongo
@@ -14,17 +17,14 @@ services:
     build: .
     restart: always
     networks:
-      - net2
-      - net1
+      - connector
     ports:
       - 8080:8080
     depends_on:
-      - mongo_db
+      - mongodb
     links:
-      - mongo_db:mongo
+      - mongodb
 
 networks:
-  net1:
-    internal: true
-  net2:
-    driver: bridge
+  connector:
+
